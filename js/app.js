@@ -1,11 +1,13 @@
 $(document).ready(function() {
-	$(".ryu").mouseenter(function() {
+	$(".ryu").on("mouseenter", function() {
 		$(".ryu-still").hide();
 		$(".ryu-ready").show();
+		console.log("mouse enter event one")
 	});
-	$(".ryu").mouseleave(function() {
+	$(".ryu").on("mouseleave", function() {
 		$(".ryu-ready").hide();
 		$(".ryu-still").show();
+		console.log("is this it");
 	});
 	$(".ryu").mousedown(function(){
 		playHadouken();
@@ -29,19 +31,21 @@ $(document).ready(function() {
 
 	$(document).keydown(function(keyEvent) {
 		if(keyEvent.keyCode == 88) {
-			
+			$(".ryu").off("mouseenter", "**");
+			$(".ryu").off("mouseleave", "**");
 			$(".ryu-cool").show();
 			$(".ryu-ready").hide();
 			$(".ryu-still").hide();
 			$(".ryu-throwing").hide();
 			// xpressed = true;
+			
 		}  
 		else {
 
 			$(".ryu-cool").hide();
 			$(".ryu-ready").hide();
-			$(".ryu-still").show();
 			$(".ryu-throwing").hide();
+			$(".ryu-still").show();
 
 		};
 
