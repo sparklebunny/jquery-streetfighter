@@ -57,3 +57,10 @@ body {
   float: left;
 }
 
+.ryu-cool {
+  background-image: url('../images/ryu-cool.gif');
+  display: none;
+  background-repeat: no-repeat;
+  width: 659px;
+  height: 494px;
+}
