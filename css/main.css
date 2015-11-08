@@ -4,6 +4,17 @@ body {
 	background-color: black;
 }
 
+.directions {
+  float: right;
+  text-align: left;
+  margin-top: -85px;
+  margin-right: 20px;
+  color: #fff;
+  background-color: #8B8682;
+  padding: 4px;
+  line-height: 20px;
+}
+
 .main {
 	background-color: white;
 	margin-top: 110px;
